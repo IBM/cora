@@ -1,38 +1,70 @@
-# CORA
-
 <!-- Build Status, is a great thing to have at the top of your repository, it shows that you take your CI/CD as first class citizens -->
 <!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
-
-<!-- Not always needed, but a scope helps the user understand in a short sentance like below, why this repo exists -->
-## Scope
+# CORA
 This is the repo with the code for the paper Improving score reliability of multiple choice benchmarks with consistency evaluation and altered answer choices.
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
-## Usage
+## Getting started
 
-[issues]: https://github.com/IBM/repo-template/issues/new
+To run this code, we advise that you create a Python enviroment first, install the required libraries, and then follow the steps in [Steps to generate results section](#steps-to-generate-results)
+and execute the scripts to generate results.
 
-This repository contains some example best practices for open source repositories:
+### Create a Python environment
 
-* [LICENSE](LICENSE)
-* [README.md](README.md)
-* [CONTRIBUTING.md](CONTRIBUTING.md)
-* [MAINTAINERS.md](MAINTAINERS.md)
-<!-- A Changelog allows you to track major changes and things that happen, https://github.com/github-changelog-generator/github-changelog-generator can help automate the process -->
-* [CHANGELOG.md](CHANGELOG.md)
+After cloning this repository, create a virtual environment:
+```
+python -m venv .venv
+```
+Activate the virtual environment:
+```
+source .venv/bin/activate
+```
+Install the required packages:
+```
+pip install -r requirements.txt
+```
 
-> These are optional
+## Steps to generate results
 
-<!-- The following are OPTIONAL, but strongly suggested to have in your repository. -->
-* [dco.yml](.github/dco.yml) - This enables DCO bot for you, please take a look https://github.com/probot/dco for more details.
-* [travis.yml](.travis.yml) - This is a example `.travis.yml`, please take a look https://docs.travis-ci.com/user/tutorial/ for more details.
+Inside the `\src` folder, we have enumerated the script folders in the order they are run:
 
-These may be copied into a new or existing project to make it easier for developers not on a project team to collaborate.
+0. Data preparation
+1. Output generation
+
+    0. Generate alternative evaluations
+    1. Generate outputs
+    2. Evaluate outputs
+
+2. Output analysis
+
+There are no enumerations for `Data preparation` and `Output analysis`, because `Data preparation` only leaves the data in an specific format and `Output analysis` contains the files for generating the metrics after running `Output generation`.
+
+Initialy, prepare the data, then generate multiple versions of the data, which are the alternative evaluations. With those evaluations, generate the model outputs and, finally, evaluate those outputs to obtain results.
+
+## How to use
+
+As an example, we have provided the MedQA data, the same data we have used in the paper, originally from [MedQA's paper github](https://github.com/jind11/MedQA?tab=readme-ov-file)
+
+You can modify the `format_data` script to add different data. 
+
+Those are the steps to generate the results: 
+
+``` python
+python -m src.data_preparation.prepare_dataset -i data/MedQA/MedQA.xlsx -o data/MedQA/MedQA_prepared.xlsx
+python -m src.output_generation.generate_alternative_evaluations -i data/MedQA/MedQA_prepared.xlsx -o data/MedQA/MedQA_wAlternativeEvaluations.xlsx
+python -m src.output_generation.generate_outputs -i data/MedQA/MedQA_wAlternativeEvaluations.xlsx -o data/MedQA/MedQA_wOutputs.xlsx
+python -m src.output_generation.evaluate_outputs -i data/MedQA/MedQA_wOutputs.xlsx -o data/MedQA/MedQA_results.json
+python -m src.output_analysis.compute_accuracies -i data/MedQA/MedQA_results.json
+```
+
+### Documentation
+
+Documentation can be found primarily in this file and soon at Cora's github pages.
 
 ## Contribute
 
 <!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-If you have any questions or issues you can create a new [issue here][issues].
+If you have any questions or issues you can create a new [issue here](https://github.com/IBM/cora/issues).
 
 Pull requests are very welcome! Make sure your patches are well tested.
 Ideally create a topic branch for every separate change you make. For
