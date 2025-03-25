@@ -68,6 +68,6 @@ If you would like to see the detailed LICENSE click [here](LICENSE).
 #
 ```
 ## Contributors
-
-[<img src="https://github.com/marcelo-grave.png" width="60px;"/>](https://github.com/marcelo-grave/)
+[<img src="https://github.com/paulocavalin.png" width="60px;"/>](https://github.com/paulocavalin/)
 [<img src="https://github.com/cassiasamp.png" width="60px;"/>](https://github.com/cassiasamp/)
+[<img src="https://github.com/marcelo-grave.png" width="60px;"/>](https://github.com/marcelo-grave/)
