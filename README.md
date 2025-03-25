@@ -55,18 +55,18 @@ example:
 5. Create new Pull Request
 
 ## License
+<!-- All source files must include a Copyright and License header. The SPDX license header is
+preferred because it can be easily scanned. -->
 
-All source files must include a Copyright and License header. The SPDX license header is 
-preferred because it can be easily scanned.
+This project is licensed under the [Apache License 2.0](LICENSE).
 
-If you would like to see the detailed LICENSE click [here](LICENSE).
-
+<!--
 ```text
 #
-# Copyright IBM Corp. {Year project was created} - {Current Year}
+# Copyright IBM Corp. 2023 - 2024
 # SPDX-License-Identifier: Apache-2.0
 #
-```
+``` -->
 ## Contributors
 [<img src="https://github.com/paulocavalin.png" width="60px;"/>](https://github.com/paulocavalin/)
 [<img src="https://github.com/cassiasamp.png" width="60px;"/>](https://github.com/cassiasamp/)
