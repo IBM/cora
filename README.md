@@ -1,13 +1,11 @@
-<!-- This should be the location of the title of the repository, normally the short name -->
-# repo-template
+# CORA
 
 <!-- Build Status, is a great thing to have at the top of your repository, it shows that you take your CI/CD as first class citizens -->
 <!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
 
 <!-- Not always needed, but a scope helps the user understand in a short sentance like below, why this repo exists -->
 ## Scope
-
-The purpose of this project is to provide a template for new open source repositories.
+This is the repo with the code for the paper Improving score reliability of multiple choice benchmarks with consistency evaluation and altered answer choices.
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
 ## Usage
