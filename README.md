@@ -10,6 +10,8 @@ This is the repo with the code for the paper Improving score reliability of mult
 <!-- A more detailed Usage or detailed explaination of the repository here -->
 ## Usage
 
+[issues]: https://github.com/IBM/repo-template/issues/new
+
 This repository contains some example best practices for open source repositories:
 
 * [LICENSE](LICENSE)
@@ -65,11 +67,7 @@ If you would like to see the detailed LICENSE click [here](LICENSE).
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
-## Authors
+## Contributors
 
-Optionally, you may include a list of authors, though this is redundant with the built-in
-GitHub list of contributors.
-
-- Author: New OpenSource IBMer <new-opensource-ibmer@ibm.com>
-
-[issues]: https://github.com/IBM/repo-template/issues/new
+[<img src="https://github.com/marcelo-grave.png" width="60px;"/>](https://github.com/marcelo-grave/)
+[<img src="https://github.com/cassiasamp.png" width="60px;"/>](https://github.com/cassiasamp/)
