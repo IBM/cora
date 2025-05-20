@@ -61,12 +61,12 @@ python -m src.output_analysis.compute_accuracies -i data/MedQA/MedQA_results.jso
 
 ### Documentation
 
-Documentation can be found primarily in this file and soon at Cora's github pages.
+Documentation can be found primarily in this file and soon at Consist's github pages.
 
 ## Contribute
 
 <!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-If you have any questions or issues you can create a new [issue here](https://github.com/IBM/cora/issues).
+If you have any questions or issues you can create a new [issue here](https://github.com/IBM/consist/issues).
 
 Pull requests are very welcome! Make sure your patches are well tested.
 Ideally create a topic branch for every separate change you make. For
@@ -91,7 +91,9 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 # SPDX-License-Identifier: Apache-2.0
 #
 ``` -->
+<!--
 ## Contributors
 [<img src="https://github.com/paulocavalin.png" width="60px;"/>](https://github.com/paulocavalin/)
 [<img src="https://github.com/cassiasamp.png" width="60px;"/>](https://github.com/cassiasamp/)
 [<img src="https://github.com/marcelo-grave.png" width="60px;"/>](https://github.com/marcelo-grave/)
+ -->
