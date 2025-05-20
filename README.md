@@ -2,8 +2,8 @@
 <!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
 [![Build Status](https://app.travis-ci.com/IBM/cora.svg?token=3QHapyMs1C2MgHcEzaRi&branch=main)](https://app.travis-ci.com/IBM/cora)
 
-# CORA
-This is the repo with the code for the paper Improving score reliability of multiple choice benchmarks with consistency evaluation and altered answer choices.
+# Consist
+<!-- This is the repo with the code for the paper Improving score reliability of multiple choice benchmarks with consistency evaluation and altered answer choices. -->
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
 ## Getting started
