@@ -1,9 +1,4 @@
 # MAINTAINERS
 
-Mo McElaney - mmcelaney@us.ibm.com
+<maintainer_name> - <maintainer_email>
 
-JJ Asghar - jja@ibm.com
-
-Joe Sepi - joesepi@ibm.com
-
-Brad Topol - btopol@us.ibm.com
