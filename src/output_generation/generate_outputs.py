@@ -27,7 +27,6 @@ def main():
     
     parser.add_argument("-fs", required=False, help="Total of fewshot examples", default=0)
     parser.add_argument("-ie", required=False, help="Inference engine: HF, OpenAI", default="HF")
-#    parser.add_argument("-do_sample", required=False, help="Inference engine: HF, OpenAI", default=False)
     parser.add_argument("-temperature", required=False, help="Temperature", default=1.0)
     parser.add_argument("-max_tokens", required=False, help="Max inference tokens", default=3)
 
