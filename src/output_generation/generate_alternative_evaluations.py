@@ -20,11 +20,6 @@ def main():
     parser.add_argument("-f", required=False, help="Filter variations, separed by commas. Ex: standard_MC,standard_MC_shuffled", default=None)
     args = parser.parse_args()
 
-
-    # Handle input data
-    # TO BE MOVED TO PREPARE_DATASET
-
-
     input_file = args.i
     print(f"The provided input file is: {input_file}")
     output_file = args.o
