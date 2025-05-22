@@ -304,52 +304,9 @@ def parse_hf_benchmark(ds_pm, benchmark_name, type_of_data):
         temp_dict['options']= [pd.Series(x, index=['A', 'B', 'C', 'D']).to_dict() for x in pm_dev['choices']]
         temp_dict['answer_idx']= [answer_dict[x] for x in pm_dev['answer'].values]
 
-    # temp_dict = {}
-    # temp_dict['question']= pm_dev['question'].values
-    # temp_dict['answer']= pm_dev['answerKey'].values
-    # # fixing issue with numbers in options here
-    # temp_dict['options']= [pd.Series(x['text'], index=pd.Series(x['label']).apply(str).replace(answer_dict)).to_dict() 
-    #                        for x in pm_dev['choices']]
-    # temp_dict['meta_info'] = np.nan
-    # temp_dict['answer_idx']= pm_dev['answerKey'].replace(answerKey_dict)
-    # temp_dict['metamap_phrases'] = np.nan
-    # temp_dict['filesource']= col
-    # temp_dict['subject'] = pm_dev['id'].values
-
     pm_dev_df = pd.DataFrame(temp_dict)
     pm_dev_df['options'] = pd.Series(pm_dev_df['options'], dtype="string")
     pm_dev_df['answer'] = pm_dev_df.apply(get_value, axis=1) 
 
 
     return pm_dev_df
-
-    # dict def for mmlu_all
-    # temp_dict = {}
-    # temp_dict['question']= pm_dev['question'].values
-    # temp_dict['answer']= [answer_dict[x] for x in pm_dev['answer'].values]
-    # temp_dict['options']= [pd.Series(x, index=['A', 'B', 'C', 'D']).to_dict() for x in pm_dev['choices']]
-    # temp_dict['meta_info'] = np.nan
-    # temp_dict['answer_idx']= pm_dev['answer'].values
-    # temp_dict['metamap_phrases'] = np.nan
-    # temp_dict['filesource']= col
-    # temp_dict['subject'] = pm_dev['subject'].values
-
-# def parse_hf_benchmark_mmlu_medical(ds_pm, type_of_data):
-#     col = str(type_of_data)
-#     pm_dev = ds_pm[col].to_pandas()
-
-#     temp_dict = {}
-#     temp_dict['question']= [pm_dev['data'][x]['Question'] for x in range(len(pm_dev['data']))]
-#     temp_dict['answer']= [pm_dev['data'][x]['Correct Answer'] for x in range(len(pm_dev['data']))]
-#     temp_dict['options']= [pm_dev['data'][x]['Options'] for x in range(len(pm_dev['data']))]
-#     temp_dict['meta_info'] = np.nan
-#     temp_dict['answer_idx']= [pm_dev['data'][x]['Correct Option'] for x in range(len(pm_dev['data']))]
-#     temp_dict['metamap_phrases'] = np.nan
-#     #temp_dict['filesource']= pm_dev['subject_name']
-#     temp_dict['filesource']= col
-
-#     pm_dev_df = pd.DataFrame(temp_dict)
-#     pm_dev_df['options'] = pd.Series(pm_dev_df['options'], dtype="string")
-#     #new_xlsx = pd.DataFrame(temp_dict).to_excel()
-
-#     return pm_dev_df
