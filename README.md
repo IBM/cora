@@ -2,7 +2,7 @@
 <!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
 [![Build Status](https://app.travis-ci.com/IBM/cora.svg?token=3QHapyMs1C2MgHcEzaRi&branch=main)](https://app.travis-ci.com/IBM/cora)
 
-# Consist
+# Cora
 <!-- This is the repo with the code for the paper Improving score reliability of multiple choice benchmarks with consistency evaluation and altered answer choices. -->
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
@@ -61,12 +61,12 @@ python -m src.output_analysis.compute_accuracies -i data/MedQA/MedQA_results.jso
 
 ### Documentation
 
-Documentation can be found primarily in this file and soon at Consist's github pages.
+Documentation can be found primarily in this file and soon at Cora's github pages.
 
 ## Contribute
 
 <!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-If you have any questions or issues you can create a new [issue here](https://github.com/IBM/consist/issues).
+If you have any questions or issues you can create a new [issue here](https://github.com/IBM/cora/issues).
 
 Pull requests are very welcome! Make sure your patches are well tested.
 Ideally create a topic branch for every separate change you make. For
