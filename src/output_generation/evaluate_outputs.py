@@ -2,15 +2,6 @@ import argparse
 import pandas as pd
 import json
 import numpy as np
-
-
-# import matplotlib.pyplot as plt
-# import numpy as np
-# import json
-# import os
-# from tqdm.notebook import tqdm
-# from pywaffle import Waffle
-
 from .. import ourlib
 
 def main():
