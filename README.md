@@ -55,8 +55,7 @@ Those are the steps to generate the results:
 python -m src.data_preparation.prepare_dataset -i data/MedQA/MedQA.xlsx -o data/MedQA/MedQA_prepared.xlsx
 python -m src.output_generation.generate_alternative_evaluations -i data/MedQA/MedQA_prepared.xlsx -o data/MedQA/MedQA_wAlternativeEvaluations.xlsx
 python -m src.output_generation.generate_outputs -i data/MedQA/MedQA_wAlternativeEvaluations.xlsx -o data/MedQA/MedQA_wOutputs.xlsx
-python -m src.output_generation.evaluate_outputs -i data/MedQA/MedQA_wOutputs.xlsx -o data/MedQA/MedQA_results.json
-python -m src.output_analysis.compute_accuracies -i data/MedQA/MedQA_results.json
+python -m src.output_analysis.compute_CoRA -i data/MMLU-Redux/MMLU-Redux_wOutputs.xlsx
 ```
 
 ### Documentation
