@@ -56,6 +56,8 @@ python -m src.data_preparation.prepare_dataset -i data/MedQA/MedQA.xlsx -o data/
 python -m src.output_generation.generate_alternative_evaluations -i data/MedQA/MedQA_prepared.xlsx -o data/MedQA/MedQA_wAlternativeEvaluations.xlsx
 python -m src.output_generation.generate_outputs -i data/MedQA/MedQA_wAlternativeEvaluations.xlsx -o data/MedQA/MedQA_wOutputs.xlsx
 python -m src.output_analysis.compute_CoRA -i data/MMLU-Redux/MMLU-Redux_wOutputs.xlsx
+python -m src.output_analysis.compute_MCA -c 0.9 -i data/MMLU-Redux/MMLU-Redux_wOutputs.xlsx
+python -m src.output_analysis.compute_CORE -i data/MMLU-Redux/MMLU-Redux_wOutputs.xlsx
 ```
 
 ### Documentation
