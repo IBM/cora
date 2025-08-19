@@ -8,8 +8,8 @@
 <!-- A more detailed Usage or detailed explaination of the repository here -->
 ## Getting started
 
-To run this code, we advise that you create a Python enviroment first, install the required libraries, and then follow the steps in [Steps to generate results section](#steps-to-generate-results)
-and execute the scripts to generate results.
+To run this code, we advise that you create a Python enviroment first, install the required libraries, and then follow the [steps to generate results](#steps-to-generate-results)
+to execute the scripts and obtain results.
 
 ### Create a Python environment
 
